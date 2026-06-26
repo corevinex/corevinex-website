@@ -54,10 +54,11 @@ img {
     inset: -20%;
     z-index: 0;
     background:
-        radial-gradient(circle at 78% 18%, rgba(0, 145, 255, .24), transparent 30%),
-        radial-gradient(circle at 20% 82%, rgba(0, 229, 255, .15), transparent 34%);
-    filter: blur(14px);
-    animation: aurora 14s ease-in-out infinite alternate;
+        radial-gradient(circle at 80% 20%, rgba(0, 145, 255, .45), transparent 40%),
+        radial-gradient(circle at 20% 80%, rgba(0, 229, 255, .35), transparent 45%);
+        radial-gradient(circle at 50% 50%, rgba(0, 229, 255, .12), transparent 60%);
+    filter: blur(20px);
+    animation: aurora 16s ease-in-out infinite alternate;
     pointer-events: none
 }
 
