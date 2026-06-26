@@ -423,16 +423,27 @@ h1 {
 .grid-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 22px
+    gap: 26px
 }
 
 .card {
-    border: 1px solid #D8E6F7;
-    background: #fff;
+
+   border: 1px solid var(--line);
+    background: rgba(8, 22, 41, 0.75);
     border-radius: 24px;
-    padding: 28px;
-    box-shadow: 0 20px 60px rgba(18, 52, 90, .08);
-    transition: .25s
+    padding: 30px 28px;
+    min-height: 180px; /* ✅ ensures equal height */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* ✅ vertical center */
+    align-items: center;       /* ✅ horizontal center */
+    
+    text-align: center;        /* ✅ center text */
+    
+    box-shadow: var(--shadow);
+}
+
 }
 
 .card:hover {
