@@ -110,7 +110,7 @@ img {
 }
 
 .logo {
-    width: 330px;
+    width: 240px;
     max-height: 120px;
     object-fit: contain
 }
@@ -125,7 +125,7 @@ img {
     border: 1px solid rgba(255, 255, 255, .25);
     border-radius: 18px;
     color: #EAF2FF;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 850;
     letter-spacing: .03em;
     padding: 10px 18px;
@@ -373,7 +373,7 @@ h1 {
 }
 
 .section {
-    padding: 92px 0
+    padding: 110px 0;
 }
 
 .light {
