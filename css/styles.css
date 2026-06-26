@@ -427,26 +427,24 @@ h1 {
 }
 
 .card {
-
-   border: 1px solid var(--line);
+    border: 1px solid var(--line);
     background: #071426;
     border-radius: 24px;
     padding: 30px 28px;
-    min-height: 180px; /* ✅ ensures equal height */
-    
+    min-height: 180px;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;   /* ✅ vertical center */
-    align-items: center;       /* ✅ horizontal center */
-    
-    text-align: center;        /* ✅ center text */
-    
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
     box-shadow: var(--shadow);
 }
 
 .light .card {
-    background: #071426; /* force dark inside
-
+    background: #071426;
+    color: #F7FAFF;
 }
 
 .light .card p {
