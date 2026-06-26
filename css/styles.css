@@ -452,8 +452,8 @@ h1 {
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 26px 70px rgba(0, 145, 255, .14)
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 80px rgba(0, 229, 255, 0.25);
 }
 
 .dark .card {
