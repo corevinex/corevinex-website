@@ -358,12 +358,12 @@ h1 {
 }
 
 .light {
-    background: rgba(255,255,255,0.02);
+    background: background: #F6FAFF;
     color: #07101D
 }
 
 .dark {
-    background: transparent;
+    background: linear-gradient(180deg, #020617, #051121);
 }
 
 .label {
