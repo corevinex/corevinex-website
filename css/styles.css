@@ -35,7 +35,7 @@ a {
 }
 
 .container {
-    width: min(var(--max), calc(100% - 20px));
+    width: min(var(--max), calc(100% - 44px));
     margin: auto
 }
 
@@ -652,6 +652,7 @@ textarea {
 
     .logo {
         width: 205px
+        transform: translateX(-12px);
     }
 
     h1 {
