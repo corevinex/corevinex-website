@@ -105,11 +105,14 @@ img {
     gap: 24px
 }
 
+.nav a:first-child {
+    margin-left: -10px;
+}
+
 .logo {
     width: 300px;
     max-height: 120px;
     object-fit: contain
-    transform: translateX(-30px);
 }
 
 .links {
