@@ -109,7 +109,7 @@ img {
     width: 300px;
     max-height: 120px;
     object-fit: contain
-    transform: translateX(-12px);
+    transform: translateX(-30px);
 }
 
 .links {
