@@ -429,7 +429,7 @@ h1 {
 .card {
 
    border: 1px solid var(--line);
-    background: rgba(8, 22, 41, 0.75);
+    background: #071426;
     border-radius: 24px;
     padding: 30px 28px;
     min-height: 180px; /* ✅ ensures equal height */
@@ -444,6 +444,13 @@ h1 {
     box-shadow: var(--shadow);
 }
 
+.light .card {
+    background: #071426; /* force dark inside
+
+}
+
+.light .card p {
+    color: #A8B7CA;
 }
 
 .card:hover {
