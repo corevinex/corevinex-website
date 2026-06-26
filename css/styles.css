@@ -118,20 +118,27 @@ img {
 }
 
 .links a {
-    border: 1px solid rgba(255, 255, 255, .55);
-    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, .25);
+    border-radius: 18px;
     color: #EAF2FF;
     font-size: 15px;
     font-weight: 850;
     letter-spacing: .03em;
-    padding: 9px 16px;
-    transition: .25s
+    padding: 10px 18px;
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    transition: all .25s ease;
 }
 
 .links a:hover,
 .links a.active {
-    border-color: var(--blue);
-    background: rgba(0, 145, 255, .13)
+    border-color: var(--cyan);
+    background: rgba(0, 229, 255, .12);
+    box-shadow:
+        0 0 18px rgba(0, 229, 255, .35),
+        0 6px 25px rgba(0, 0, 0, .35);
+    transform: translateY(-2px);
 }
 
 .links .cta {
@@ -139,7 +146,16 @@ img {
     background: linear-gradient(135deg, var(--cyan), var(--blue));
     color: #001828;
     padding: 11px 20px;
-    box-shadow: 0 16px 50px rgba(0, 145, 255, .25)
+    box-shadow: 0 10px 35px rgba(0, 145, 255, .45),
+                0 0 20px rgba(0, 229, 255, .25);
+    transition: .3s
+}
+
+.links .cta:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        0 15px 45px rgba(0, 145, 255, .65),
+        0 0 25px rgba(0, 229, 255, .45);
 }
 
 .hero {
