@@ -45,7 +45,8 @@ if (canvas) {
               d = Math.hypot(a.x - b.x, a.y - b.y);
 
         if (d < 150) {
-          ctx.strokeStyle = `rgba(0,220,255,${(1-d/150)*.8})`;
+          ctx.strokeStyle = `rgba(0,229,255,${(1-d/150)*1.1})`;
+          ctx.lineWidth = 1.2;
           ctx.beginPath();
           ctx.moveTo(a.x, a.y);
           ctx.lineTo(b.x, b.y);
