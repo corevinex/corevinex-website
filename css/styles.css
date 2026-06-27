@@ -117,6 +117,9 @@ img {
 .logo:hover {
     transform: scale(1.02);
 }
+button, a, img {
+    transition: all 0.3s ease;
+}
 .links {
     display: flex;
     align-items: center;
