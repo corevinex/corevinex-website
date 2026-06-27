@@ -97,6 +97,10 @@ img {
     z-index: 40
 }
 
+.header.scrolled {
+    box-shadow: 0 5px 20px rgba(0, 229, 255, 0.15);
+}
+
 .nav {
     height: 90px;
     display: flex;
