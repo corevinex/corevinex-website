@@ -113,8 +113,11 @@ img {
     width: 240px;
     max-height: 120px;
     object-fit: contain
+    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
 }
-
+.logo:hover {
+    transform: scale(1.02);
+}
 .links {
     display: flex;
     align-items: center;
