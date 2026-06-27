@@ -210,8 +210,8 @@ img {
 
 h1 {
     font-size: clamp(2.45rem, 4.05vw, 3.75rem);
-    line-height: 1.08;
-    letter-spacing: -.035em;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
     margin: 24px 0 20px;
     animation: headlineFadeIn .95s ease-out both
 }
