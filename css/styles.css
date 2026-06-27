@@ -705,3 +705,45 @@ textarea {
         transition: none !important
     }
 }
+/* ==============================
+   Corevinex Service Icons
+================================= */
+
+.service-icon{
+
+    width:70px;
+    height:70px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 18px auto;
+
+    border-radius:18px;
+
+    background:rgba(0,155,255,.08);
+
+    border:1px solid rgba(0,229,255,.18);
+
+    color:#00BFFF;
+
+    font-size:34px;
+
+    transition:.35s ease;
+
+    box-shadow:0 0 18px rgba(0,229,255,.08);
+
+}
+
+.card:hover .service-icon{
+
+    transform:translateY(-6px);
+
+    background:linear-gradient(135deg,#00E5FF,#079BFF);
+
+    color:#ffffff;
+
+    box-shadow:0 0 28px rgba(0,229,255,.35);
+
+}
