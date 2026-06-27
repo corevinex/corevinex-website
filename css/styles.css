@@ -116,7 +116,11 @@ img {
 .logo {
     width: 240px;
     max-height: 120px;
-    transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+    object-fit: contain;
+    transition: transform 0.15s ease;
+	transform: translateZ(0);
+	backface-visibility: hidden;
+	will-change: transform;
 }
 .logo:hover {
     transform: scale(1.02);
