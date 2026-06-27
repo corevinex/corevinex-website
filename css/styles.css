@@ -438,14 +438,13 @@ h1 {
     border-radius: 24px;
     padding: 30px 28px;
     min-height: 180px;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     text-align: center;
     box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .light .card {
@@ -458,8 +457,8 @@ h1 {
 }
 
 .card:hover {
-  transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 30px 80px rgba(0, 229, 255, 0.25);
+  transform: translateY(-6px);
+box-shadow: 0 20px 60px rgba(0, 229, 255, 0.18);
 }
 
 .dark .card {
