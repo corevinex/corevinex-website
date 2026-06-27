@@ -44,7 +44,7 @@ if (canvas) {
               b = pts[j],
               d = Math.hypot(a.x - b.x, a.y - b.y);
 
-        if (d < 150) {
+        if (d < 120) {
           ctx.strokeStyle = `rgba(0,229,255,${(1-d/150)*1.1})`;
           ctx.lineWidth = 1.2;
           ctx.beginPath();
