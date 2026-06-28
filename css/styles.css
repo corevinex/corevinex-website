@@ -495,12 +495,48 @@ box-shadow: 0 20px 60px rgba(0, 229, 255, 0.18);
     font-size: 1.28rem;
     margin: 0 0 10px;
     display: flex;
-    align-items: center
+    align-items: center;
+	gap:12px;
 }
 
 .card ul {
-    margin: 14px 0 0;
-    padding-left: 20px
+    list-style:none;
+    padding:0;
+    margin-top:auto;
+    width:100%;
+}
+
+.card li{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin-bottom:12px;
+
+    text-align:left;
+
+}
+.card li::before{
+
+    content:"✓";
+
+    color:#00E5FF;
+
+    font-weight:bold;
+
+    font-size:16px;
+
+    width:20px;
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
 }
 
 .split {
