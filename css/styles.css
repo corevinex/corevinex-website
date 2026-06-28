@@ -122,6 +122,12 @@ img {
 	backface-visibility: hidden;
 	will-change: transform;
 }
+
+.footer .logo {
+  height: 32px;     /* slightly smaller */
+  opacity: 0.9;
+}
+
 .logo:hover {
     transform: scale(1.02);
 }
