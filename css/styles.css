@@ -412,7 +412,7 @@ h1 {
 .label {
     display:inline-block;
 
-    font-size:1.6rem;
+    font-size:1.9rem;
 
     font-weight:900;
 
@@ -424,7 +424,7 @@ h1 {
 
     position:relative;
 
-    padding-bottom:25px;
+    padding-bottom:10px;
 }
 
 .label::after{
