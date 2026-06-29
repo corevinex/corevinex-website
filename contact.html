@@ -81,11 +81,11 @@
 
                     <div class="panel reveal">
 
-                        <form class="form"
-                            action="mailto:info@corevinex.com"
-                            method="post"
-                            enctype="text/plain">
 
+					<form class="form" id="contactForm">
+    					<input type="hidden" name="access_key" value="84b2a17a-31e8-4d76-a32a-1616a235ef39">
+   						<input type="hidden" name="subject" value="New Corevinex Inquiry">
+						<input type="checkbox" name="botcheck" style="display:none;">
                             <label>
                                 Full name
                                 <input
@@ -129,7 +129,7 @@
                             </button>
 
                         </form>
-
+					<div id="result" style="margin-top:15px;"></div>
                     </div>
 
                 </div>
@@ -146,5 +146,36 @@
         </footer>
     </div>
     <script src="js/main.js"></script>
+	
+<script>
+const form = document.getElementById("contactForm");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    result.innerHTML = "Sending...";
+
+    const formData = new FormData(form);
+
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            result.innerHTML = "<span style='color:#00e6a8;'>✔ Request submitted successfully. We'll contact you shortly.</span>";
+            form.reset();
+        } else {
+            result.innerHTML = "<span style='color:red;'>❌ Failed to send message.</span>";
+        }
+    })
+    .catch(() => {
+        result.innerHTML = "<span style='color:red;'>❌ Error submitting form.</span>";
+    });
+});
+</script>
+
 </body>
 </html>
