@@ -410,11 +410,41 @@ h1 {
 }
 
 .label {
-    font-size: .78rem;
-    color: #00B7FF;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    font-weight: 950
+    display:inline-block;
+
+    font-size:1.6rem;
+
+    font-weight:900;
+
+    color:#00B7FF;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    position:relative;
+
+    padding-bottom:25px;
+}
+
+.label::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:70px;
+
+    height:3px;
+
+    background:linear-gradient(90deg,#00E5FF,#079BFF);
+
+    border-radius:5px;
+
 }
 
 .light .label {
