@@ -27,6 +27,10 @@ body {
     font-family: Inter, Segoe UI, Arial, sans-serif;
     line-height: 1.6;
     overflow-x: hidden
+
+	-webkit-font-smoothing: antialiased;
+   	-moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 a {
@@ -211,7 +215,8 @@ button, a, img {
 
 .eyebrow {
     color: var(--cyan);
-    font-weight: 950;
+    font-weight: 700;
+	font-size: 0.85rem;
     letter-spacing: .08em;
     text-transform: uppercase;
     display: flex;
@@ -265,7 +270,7 @@ h1 {
     min-height: 52px;
     padding: 13px 22px;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 600;
     border: 1px solid var(--cyan);
     transition: .25s
 }
@@ -364,14 +369,14 @@ h1 {
 
 .counter-row span {
     color: #C7D7EA;
-    font-weight: 700
+    font-weight: 500
 }
 
 .counter-row strong {
     color: var(--green);
     font-size: 1.38rem;
     letter-spacing: -.03em;
-    font-weight: 950;
+    font-weight: 700;
     text-shadow: 0 0 20px rgba(114, 247, 178, .28)
 }
 
@@ -449,9 +454,10 @@ h1 {
 
 .section h2 {
     font-size: clamp(2rem, 4vw, 2.9rem);
+	font-weight: 700;
     line-height: 1;
     letter-spacing: -.03em;
-    margin: 10px 0 12px
+    margin: 10px 0 12px;
     max-width: 700px;
 }
 
@@ -533,7 +539,8 @@ h1 {
 }
 
 .card h3 {
-    font-size: 1.28rem;
+    font-size: 1.2rem;
+	font-weight: 600;
     margin: 0 0 10px;
     display: flex;
     align-items: center;
@@ -553,6 +560,7 @@ h1 {
     gap:12px;
     margin-bottom:12px;
     text-align:left;
+	font-weight: 500;
 }
 .card li::before{
     content:"✓";
