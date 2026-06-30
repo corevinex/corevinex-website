@@ -626,7 +626,7 @@ h1 {
 
 .steps {
     display: grid;
-    gap: 24px;
+    gap: 28px;
 }
 
 .step {
