@@ -190,6 +190,12 @@ button, a, img {
         0 0 25px rgba(0, 229, 255, .45);
 }
 
+.contact-heading {
+    font-size: 3rem !important;
+    line-height: 1.1;
+    margin: 10px 0 35px;
+}
+
 .hero {
     min-height: 790px;
     display: grid;
