@@ -627,8 +627,8 @@ h1 {
 .metric strong {
     display: block;
     color: var(--cyan);
-    font-size: 2rem;
-	font-weight: 700;
+    font-size: 1.7rem;
+	font-weight: 500;
     letter-spacing: -.04em
 }
 
