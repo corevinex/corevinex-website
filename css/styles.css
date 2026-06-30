@@ -354,6 +354,35 @@ h1 {
     animation: float2 8s ease-in-out infinite
 }
 
+.contact-link {
+    color: #d6e6ff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #22d3ee;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.whatsapp-btn:hover {
+    background: #20ba5a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+
 .counter-row {
     display: flex;
     align-items: baseline;
