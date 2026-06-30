@@ -272,12 +272,14 @@ h1 {
 
 .btn.primary {
     background: linear-gradient(135deg, var(--cyan), var(--blue));
+	font-weight: 600;
     color: #001925;
     border: 0
 }
 
 .btn.ghost {
     background: rgba(4, 18, 34, .58);
+	font-weight: 600;
     color: #F5FAFF
 }
 
