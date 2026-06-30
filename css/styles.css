@@ -855,8 +855,8 @@ textarea {
     bottom: 20px;
     right: 20px;
 
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
 
     border-radius: 50%;
     background: #25D366;
@@ -870,8 +870,7 @@ textarea {
 	text-decoration: none;
     box-shadow:
         0 6px 18px rgba(37, 211, 102, 0.25);
-    
-    animation:
+   animation:
         whatsappEntrance .5s ease-out,
         whatsappFloat 3s ease-in-out infinite;
 }
