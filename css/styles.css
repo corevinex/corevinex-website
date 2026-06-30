@@ -445,9 +445,9 @@ h1 {
 }
 
 .section h2 {
-    font-size: clamp(2rem, 4vw, 3.7rem);
+    font-size: clamp(2rem, 4vw, 2.9rem);
     line-height: 1;
-    letter-spacing: -.05em;
+    letter-spacing: -.03em;
     margin: 10px 0 12px
     max-width: 700px;
 }
