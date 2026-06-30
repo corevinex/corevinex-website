@@ -626,7 +626,7 @@ h1 {
 
 .steps {
     display: grid;
-    gap: 16px
+    gap: 24px;
 }
 
 .step {
@@ -842,8 +842,7 @@ textarea {
 }
 
 .step h3 {
-    margin: 0 0 10px 0;
-    font-weight: 600 !important;
+    margin: 0 0 8px 0;
 }
 
 .step p {
