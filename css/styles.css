@@ -303,6 +303,7 @@ h1 {
 
 .trust strong {
     display: block;
+	font-weight: 600;
     font-size: 1.06rem
 }
 
