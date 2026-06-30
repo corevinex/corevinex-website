@@ -415,7 +415,7 @@ h1 {
 .label {
     display:inline-block;
     font-size:1.0rem;
-    font-weight:900;
+    font-weight:300;
     color:#00B7FF;
     letter-spacing:4px;
     text-transform:uppercase;
@@ -599,7 +599,7 @@ h1 {
     display: grid;
     place-items: center;
     color: #001925;
-    font-weight: 950
+    font-weight: 600;
 }
 
 .dashboard {
@@ -639,7 +639,8 @@ h1 {
     display: grid;
     gap: 7px;
     color: #DCEAFF;
-    font-weight: 800
+    font-weight: 500;
+	font-size: 0.95rem;
 }
 
 .form .full {
@@ -792,4 +793,8 @@ textarea {
     background:linear-gradient(135deg,#00E5FF,#079BFF);
     color:#ffffff;
     box-shadow:0 0 28px rgba(0,229,255,.35);
+}
+
+.step h3 {
+    font-weight: 600 !important;
 }
