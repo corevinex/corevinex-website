@@ -195,20 +195,6 @@ button, a, img {
         0 0 18px rgba(0,229,255,.18);
 }
 
-.links a.threat-intel-nav.active {
-    background: linear-gradient(
-        135deg,
-        #00E5FF,
-        #079BFF
-    );
-
-    border-color: #00E5FF;
-    color: #001925;
-
-    box-shadow:
-        0 0 18px rgba(0,229,255,.25);
-}
-
 .links .cta {
     border: 0;
     background: linear-gradient(135deg, var(--cyan), var(--blue));
