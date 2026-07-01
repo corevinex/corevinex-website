@@ -178,21 +178,28 @@ button, a, img {
     box-shadow: 0 3px 8px rgba(0, 229, 255, 0.15);
     transform: translateY(-1px);
 }
-.links a.threat-intel-nav {
-    border-color: rgba(0,229,255,.45);
-    background: rgba(0,229,255,.08);
-    color: #00E5FF;
 
+/* ==================================
+   Threat Intel Special Navigation
+   ================================== */
+.links a.threat-intel-nav {
+    background: linear-gradient(
+        135deg,
+        #00E5FF,
+        #079BFF
+    );
+
+    border-color: #00E5FF;
+    color: #001925;
     box-shadow:
-        0 0 12px rgba(0,229,255,.12);
+        0 0 18px rgba(0,229,255,.25);
 }
 
 .links a.threat-intel-nav:hover {
-    border-color: #00E5FF;
-    color: #00E5FF;
-
+    transform: translateY(-2px);
     box-shadow:
-        0 0 18px rgba(0,229,255,.18);
+        0 0 24px rgba(0,229,255,.35),
+        0 8px 20px rgba(0,229,255,.20);
 }
 
 .links .cta {
