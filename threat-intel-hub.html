@@ -1,16 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<nav class="links" aria-label="Primary navigation">
-  <a href="index.html">Home</a>
-  <a href="services.html">Services</a>
-  <a href="about.html">About</a>
-  <a class="active" href="threat-intel-hub.html">Threat Intel</a>
-  <a href="contact.html">Contact us</a>
-</nav>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon.png">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="canonical" href="https://corevinex.com/threat-intel-hub.html">
 <title>Corevinex Threat Intelligence Hub</title>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -268,6 +264,31 @@
 </head>
 <body>
 
+<div class="aurora"></div>
+<canvas id="particles"></canvas>
+
+<div class="site">
+
+<header class="header">
+  <div class="container nav">
+
+    <a href="index.html">
+      <img class="logo"
+           src="assets/corevinex-logo.svg"
+           alt="Corevinex Cybersecurity logo">
+    </a>
+
+    <nav class="links" aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a class="active" href="threat-intel-hub.html">Threat Intel</a>
+      <a href="contact.html">Contact us</a>
+    </nav>
+
+  </div>
+</header>
+
 <section class="threat-hub">
   <div class="container">
 
@@ -509,7 +530,7 @@ async function loadThreatIntel() {
 			${severity.toUpperCase()}
 		  </div>
 
-		  <div class="severity high-tag">
+		  <div class="severity kev-tag">
 			Known Exploited
 		  </div>
 
@@ -583,5 +604,17 @@ setInterval(() => {
 
 </section>
 
+<footer class="footer">
+    <div class="container footer-wrap">
+
+        <img class="logo"
+             src="assets/corevinex © 2026 Corevinex Cybersecurity Services
+        </div>
+
+    </div>
+</footer>
+
+</div>
+<script src="js/main.js"></script>
 </body>
 </html>
