@@ -138,6 +138,12 @@ img {
 button, a, img {
     transition: all 0.3s ease;
 }
+
+/* ==================================
+   Threat Intel Special Navigation
+ ================================== */
+
+
 .links {
     display: flex;
     align-items: center;
@@ -171,6 +177,36 @@ button, a, img {
     background: rgba(0, 229, 255, .08);
     box-shadow: 0 3px 8px rgba(0, 229, 255, 0.15);
     transform: translateY(-1px);
+}
+.links a.threat-intel-nav {
+    border-color: rgba(0,229,255,.45);
+    background: rgba(0,229,255,.08);
+    color: #00E5FF;
+
+    box-shadow:
+        0 0 12px rgba(0,229,255,.12);
+}
+
+.links a.threat-intel-nav:hover {
+    border-color: #00E5FF;
+    color: #00E5FF;
+
+    box-shadow:
+        0 0 18px rgba(0,229,255,.18);
+}
+
+.links a.threat-intel-nav.active {
+    background: linear-gradient(
+        135deg,
+        #00E5FF,
+        #079BFF
+    );
+
+    border-color: #00E5FF;
+    color: #001925;
+
+    box-shadow:
+        0 0 18px rgba(0,229,255,.25);
 }
 
 .links .cta {
