@@ -775,9 +775,9 @@ h1 {
     content:"";
     position:absolute;
     width:500px;
-    height:180px;
+    height:90px;
     left:50%;
-    top:-5%;
+    top:60%;
     transform:
         translate(-50%, -50%);
     background:
