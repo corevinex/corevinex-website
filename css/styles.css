@@ -182,6 +182,243 @@ button, a, img {
 /* ==================================
    Threat Intel Special Navigation
    ================================== */
+
+.threat-hub .container{
+    position:relative;
+    z-index:5;
+}
+
+
+.world-map-bg{
+	position:absolute;
+
+    top:-85px;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:
+        url('assets/world-map.svg')
+        center top no-repeat;
+
+    background-size:75%;
+
+    opacity:.08;
+
+    pointer-events:none;
+    z-index:0;
+
+    /* Fade out the lower part */
+    mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,1) 45%,
+        rgba(0,0,0,.5) 65%,
+        rgba(0,0,0,0) 100%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        rgba(0,0,0,1) 0%,
+        rgba(0,0,0,1) 45%,
+        rgba(0,0,0,.5) 65%,
+        rgba(0,0,0,0) 100%
+    );
+}
+
+
+
+.brand-blue{
+    background:linear-gradient(
+        90deg,
+        #00AEEF 0%,
+        #00D4FF 100%
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+
+    text-shadow:
+        0 0 20px rgba(0,229,255,.25);
+}
+
+.world-map-bg::after{
+
+content:"";
+
+    position:absolute;
+    inset:0;
+
+    background:
+      linear-gradient(
+        90deg,
+        transparent,
+        rgba(0,229,255,.04),
+        transparent
+      );
+
+    animation: mapScan 12s linear infinite;
+}
+
+@keyframes mapScan{
+    from{
+        transform:translateX(-100%);
+    }
+
+    to{
+        transform:translateX(100%);
+    }
+}
+
+.badge-wrapper{
+    position:relative;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:18px;
+}
+
+.radar-ring{
+    position:absolute;
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+    border:1px solid rgba(0,229,255,.12);
+
+    animation:
+        radarSpin 30s linear infinite;
+}
+
+.radar-ring::before{
+    content:"";
+
+    position:absolute;
+    inset:-22px;
+
+    border-radius:50%;
+    border:1px solid rgba(0,229,255,.06);
+}
+
+@keyframes radarSpin{
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(360deg);
+    }
+}
+
+
+.cyber-network{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+}
+
+.cyber-network span{
+    position:absolute;
+
+    width:6px;
+    height:6px;
+
+    background:#00E5FF;
+
+    border-radius:50%;
+
+    box-shadow:
+        0 0 12px rgba(0,229,255,.8);
+
+    animation:
+        nodePulse 3s ease-in-out infinite;
+}
+
+.cyber-network span:nth-child(1){
+    top:18%;
+    left:22%;
+}
+
+.cyber-network span:nth-child(2){
+    top:32%;
+    right:24%;
+}
+
+.cyber-network span:nth-child(3){
+    top:52%;
+    left:15%;
+}
+
+.cyber-network span:nth-child(4){
+    top:60%;
+    right:18%;
+}
+
+.cyber-network span:nth-child(5){
+    top:12%;
+    right:35%;
+}
+
+.cyber-network span:nth-child(6){
+    top:72%;
+    left:34%;
+}
+
+@keyframes nodePulse{
+    50%{
+        transform:scale(1.8);
+    }
+}
+
+
+
+.cyber-network::before{
+    display:none;
+}
+
+
+
+.floating-particles{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+}
+
+.floating-particles::before{
+    content:"";
+
+    position:absolute;
+    inset:0;
+
+    background-image:
+       radial-gradient(
+            circle,
+            rgba(0,229,255,.8) 1px,
+            transparent 1px
+       );
+
+    background-size:
+       160px 160px;
+
+    opacity:.25;
+
+    animation:
+       particleFlow 35s linear infinite;
+}
+
+@keyframes particleFlow{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-120px);
+    }
+}
+
+
 .links a.threat-intel-nav {
     background: linear-gradient(
         135deg,
@@ -513,6 +750,44 @@ h1 {
 
 .light .label {
     color: #006BDB
+}
+
+
+
+.threat-hub .section-head h2{
+    position: relative;
+    font-size:46px;
+    line-height:1.05;
+    margin:0 0 14px 0;
+    max-width:none;
+    position:relative;
+}
+
+.threat-hub{
+    position: relative;
+    overflow: hidden;
+
+    padding: 80px 0 50px;
+    background: #06111F;
+}
+
+.threat-hub .section-head h2::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:180px;
+    left:50%;
+    top:-5%;
+    transform:
+        translate(-50%, -50%);
+    background:
+       radial-gradient(
+            circle,
+            rgba(0,229,255,.08),
+            transparent 90%
+       );
+
+    z-index:-1;
 }
 
 .section-head {
