@@ -288,9 +288,25 @@ content:"";
     border:1px solid rgba(0,229,255,.12);
 
     animation:
-        radarSpin 30s linear infinite;
+        radarSpin 20s linear infinite;
 }
-
+.radar-ring::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:50%;
+    width:2px;
+    height:30px;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(0,229,255,.9),
+            transparent
+        );
+    transform:translateX(-50%);
+    box-shadow:
+        0 0 8px rgba(0,229,255,.4);
+}
 .radar-ring::before{
     content:"";
 
